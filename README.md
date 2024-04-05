@@ -82,3 +82,11 @@ However, a node can complete the handshake, but not support the expected capabil
 ```bash
 2024-04-05T20:30:58.820437Z  WARN eths::client: no shared capabilities with Node { id: "5825b736bb359a0d52ab70867d880ab468ec2b29ff2a743d9d3d3d767869b772a6b455b142ff9339abebe348f2559d4f6dd1ba1219e598ce8e5935065211881e", ip: "95.216.64.51", port: 30303 } - they have [Capability { name: "eth", version: 68 }]
 ```
+
+# Tests
+
+There are tests for the config file and the client handshake, you can run all of them with:
+```bash
+cargo test
+```
+Be mindful over several runs, as previously successful nodes might do some rate limiting/throttling, and the client test might fail.

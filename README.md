@@ -27,6 +27,10 @@ enode_id,ip,port
 
 This client requires at least Rust 1.76.0 due to an alloy-rpc-types-trace dependency, and optionally the nightly build for the cargo fmt styling.  
 Build has been tested on Debian 11 Bullseye and MacOS 14.0 M1 Max.  
+Please note that on MacOS, due to the usage of bindgen (and thus, `stdlib.h`) in blst crate, you might need to set the SDKROOT to the correct path, for example:
+```bash
+export SDKROOT=$(xcrun --sdk macosx --show-sdk-path)
+```
 To run the client, you can try the --help argument:
 ```bash
 cargo run -- --help

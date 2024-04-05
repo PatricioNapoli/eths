@@ -106,7 +106,7 @@ impl Client {
     /// Get our capabilities.
     /// We "support" all versions from 66 to 68.
     fn get_client_capabilities() -> Vec<Protocol> {
-        vec![EthVersion::Eth66.into(), EthVersion::Eth67.into()]
+        vec![EthVersion::Eth66.into(), EthVersion::Eth67.into(), EthVersion::Eth68.into()]
     }
 
     /// Attempt a handshake with all nodes in the config.

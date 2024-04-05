@@ -25,6 +25,8 @@ enode_id,ip,port
 
 # Usage
 
+This client requires at least Rust 1.76.0 due to an alloy-rpc-types-trace dependency, and optionally the nightly build for the cargo fmt styling.  
+Build has been tested on Debian 11 Bullseye and MacOS 14.0 M1 Max.  
 To run the client, you can try the --help argument:
 ```bash
 cargo run -- --help

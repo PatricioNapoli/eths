@@ -77,6 +77,11 @@ When a node refuses to reply, the log will show something similar to the followi
 
 When a node successfully completes the handshake, the log will show the peer that replied and the capabilities it supports:
 ```bash
+2024-04-05T20:46:56.781064Z  INFO eths::client: received hello from Node { id: "5825b736bb359a0d52ab70867d880ab468ec2b29ff2a743d9d3d3d767869b772a6b455b142ff9339abebe348f2559d4f6dd1ba1219e598ce8e5935065211881e", ip: "95.216.64.51", port: 30303 }
+2024-04-05T20:46:56.781114Z  INFO eths::client: hello message: HelloMessage { protocol_version: V5, client_version: "erigon/v2.59.2-a013ec25/linux-amd64/go1.21.5", capabilities: [Capability { name: "eth", version: 68 }], port: 0, id: 0x5825b736bb359a0d52ab70867d880ab468ec2b29ff2a743d9d3d3d767869b772a6b455b142ff9339abebe348f2559d4f6dd1ba1219e598ce8e5935065211881e }
+
+...
+
 2024-04-05T20:29:00.753830Z  INFO eths: handshake successful for peer: Peer { node: Node { id: "5825b736bb359a0d52ab70867d880ab468ec2b29ff2a743d9d3d3d767869b772a6b455b142ff9339abebe348f2559d4f6dd1ba1219e598ce8e5935065211881e", ip: "95.216.64.51", port: 30303 }, capabilities: [Capability { name: "eth", version: 68 }] }
 ```
 
